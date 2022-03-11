@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=width, initial-scale=version">
+    <title>Complex Selectors</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/70c45dc1b9.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
+</head>
+<body>
+    <header class="header">
+       <div class="container flex">
+            <a class="brand" href="#">TrackL</a>
+            <label for="toggle">
+                <i class="fas fa-bars bars"></i>
+            </label>
+            <input id="toggle" type="checkbox">
+            <nav class="nav">
+                <ul class="flex flex-col">
+                    <li>
+                        <a href="#">Features</a>
+                    </li>
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                </ul>
+            </nav>
+       </div>
+    </header>
+
+    <section class="hero padding">
+        <h1 class="heading">Track the learning <br>process schedule</h1>
+        <a class="btn" href="#">Get 30 days trial</a>
+
+       <div class="hero-image">
+            <img class="full-width" src="./assets/hero.png" alt="hero-img">
+       </div>
+    </section>
+
+    <section class="attachment padding">
+        <div class="container flex">
+            <div class="flex">
+                <a href="#.pdf"></a>
+                <span class="pdf-text">PDF FILE</span>
+            </div>
+            <div class="flex">
+                <a href="#.doc"></a>
+                <span class="pdf-text">WORD FILE</span>
+            </div>
+            <div class="flex">
+                <a href="#.img"></a>
+                <span class="pdf-text">IMAGE FILE</span>
+            </div>
+            <div class="flex">
+                <a href="#.mp4"></a>
+                <span class="pdf-text">VIDEO FILE</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="statistics padding">
+        <div class="container flex align-start">
+            <div class="col-45">
+                <h2 class="stat-heading">Monior your learning <br> and improve it</h2>
+                <p class="stat-text">
+                Far far way , behind the word mountains , far from the countries Vokalia and Consonantia , there live the blinds texts.
+                </p>
+                <!-- <div class="arrow-right-left">
+
+                </div> -->
+                <div class="square">
+                    <p>Learn More</p>
+                </div>
+                <div class="arrow-right-right">
+                    
+                </div>
+            </div>
+            <div class="col-45">
+                <img class="full-width" src="./assets/learning-graph.png" alt="graph">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="score padding">
+        
+        <div class="container">
+            <table>
+                <caption>Weekly Score</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Days</th>
+                        <th scope="col">Course</th>
+                        <th scope="col">Score(0-100)</th>
+                        <th scope="col">Hour Spent</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Monday</td>
+                        <td>Product Design</td>
+                        <td>40</td>
+                        <td>2 Hour 30 Min</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Product Design</td>
+                        <td>60</td>
+                        <td>3 Hour 20 Min</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Data Science</td>
+                        <td>20</td>
+                        <td>1 Hour 30 Min</td>
+                    </tr>
+
+                    <tr>
+                        <td>Thursday</td>
+                        <td>UI Design</td>
+                        <td>60</td>
+                        <td>2 Hour 20 Min</td>
+                    </tr>
+
+                    <tr>
+                        <td>Friday</td>
+                        <td>UX Design</td>
+                        <td>30</td>
+                        <td>2 Hour 30 Min</td>
+                    </tr>
+
+                    <tr>
+                        <td>Saturday</td>
+                        <td>Data Science</td>
+                        <td>50</td>
+                        <td>2 Hour 40 Min</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sunday</td>
+                        <td>HTML and CSS</td>
+                        <td>70</td>
+                        <td>3 Hour 30 Min</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="pricing padding">
+        <h2 class="pricing-heading">Join us and lets study <br> with your friends</h2>
+        <div class="container">
+            <div class="flex">
+                <div class="col-45 container box">
+                    <h3 class="box-heading">Basic</h3>
+                    <p class="box-text">It is a long established fact that a reader <br> will be distracted by a readable</p>
+                    <div class="price-box">
+                        <span class="price">48</span>
+                    </div>
+                    <hr class="price-hr">
+                    <div class="checklist">
+                        <img src="./assets/tick.png" alt="tick">
+                        <span class="tick">50 courses a day</span>
+                    </div>
+    
+                    <div class="checklist">
+                        <img src="./assets/tick.png" alt="tick">
+                        <span class="tick">4 forums a month</span>
+                    </div>
+    
+                    <div class="checklist">
+                        <img src="./assets/tick.png" alt="tick">
+                        <span class="tick">16 chapters a day</span>
+                    </div>
+    
+                    <div class="checklist">
+                        <img src="./assets/cross.png" alt="cross">
+                        <span class="cross">Private lessons once a week</span>
+                    </div>
+    
+                    <div class="checklist">
+                        <img src="./assets/cross.png" alt="cross">
+                        <span class="cross">Get weekly reward</span>
+                    </div>
+    
+                    <a href="#" class="pricing-btn-one">Get Started</a>
+    
+    
+                </div>
+    
+                <div class="col-45 container box">
+                    <h3 class="box-heading">Most Popular</h3>
+                    <p class="box-text">It is a long established fact that a reader <br> will be distracted by a readable</p>
+                    <div class="price-box">
+                        <span class="price">58</span>
+                    </div>
+                    <hr class="price-hr">
+                    <div class="checklist">
+                        <img src="./assets/tick.png" alt="tick">
+                        <span class="tick">50 courses a day</span>
+                    </div>
+    
+                    <div class="checklist">
+                        <img src="./assets/tick.png" alt="tick">
+                        <span class="tick">4 forums a month</span>
+                    </div>
+    
+                    <div class="checklist">
+                        <img src="./assets/tick.png" alt="tick">
+                        <span class="tick">16 chapters a day</span>
+                    </div>
+    
+                    <div class="checklist">
+                        <img src="./assets/tick.png" alt="tick">
+                        <span class="tick">Private lessons once a week</span>
+                    </div>
+    
+                    <div class="checklist">
+                        <img src="./assets/tick.png" alt="tick">
+                        <span class="tick">Get weekly reward</span>
+                    </div>
+    
+                    <a href="#" class="pricing-btn-two">Get Started</a>
+    
+    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trial padding container">
+        <h2>Start your 30 Days free trial now!</h2>
+        <a href="#" class="btn-trial">Get started</a>
+    </section>
+</body>
+</html>

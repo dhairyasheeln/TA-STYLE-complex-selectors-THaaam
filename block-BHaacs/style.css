@@ -1,0 +1,502 @@
+    /* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+
+
+
+
+
+/*Generalized*/
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-size:16px;
+    line-height: 1.5;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width:1200px;
+    width:100%;
+    margin:0 auto;
+    padding:0 32px;
+}
+
+:root{
+    --primary:#59BFC2;
+    --secondary:#FFFFFF;
+    --tertiary:#D5E5E5;
+    --dark-blue:#314377;
+    --grey:#BFCAE1;
+    --dark-grey:#7084B0;
+    --light-blue:#D5E5E5;
+    --light-grey:#E8EEFB;
+}
+
+.padding{
+    padding:60px 0;
+}
+
+.full-width{
+    width: 100%;;
+}
+
+.col-45{
+    flex:0 1 45%;
+}
+
+
+/*Flex*/
+
+.flex{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.align-start{
+    align-items: flex-start;
+}
+
+/*Header*/
+
+.header{
+    background-color: var(--primary);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav li{
+    margin-left: 20px;
+}
+
+.brand{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    color:var(--secondary);
+}
+.nav a{
+    text-decoration: none;
+    color:var(--secondary);
+}
+
+#toggle{
+    display: none;
+}
+
+label{
+    display:none;
+}
+
+/*Hero Section*/
+
+.hero{
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--primary) 75%, var(--secondary) 25%);
+}
+
+.heading{
+    font-size: 54px;
+    color:var(--secondary);
+    text-transform: capitalize;
+}
+
+/*Button*/
+.btn{
+    padding:20px 40px;
+    color:var(--dark-blue);
+    background-color: var(--secondary);
+    border-radius: 5px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+}
+
+
+/*Attachment*/
+a[href$="pdf"]
+{
+    background: url("./assets/pdf.png") no-repeat;
+    width: 40px;
+    height: 40px;
+    display:inline-block;
+}
+
+a[href$="doc"]
+{
+    background: url("./assets/word.png") no-repeat;
+    width: 40px;
+    height: 40px;
+    display:inline-block;
+}
+
+a[href$="img"]
+{
+    background: url("./assets/image.png") no-repeat;
+    width: 40px;
+    height: 40px;
+    display:inline-block;
+}
+
+a[href$="mp4"]
+{
+    background: url("./assets/video.png") no-repeat;
+    width: 40px;
+    height: 40px;
+    display:inline-block;
+}
+
+
+.pdf-text{
+    color:var(--grey);
+    font-size: 24px;
+    font-weight:900;
+    margin-left: 10px;
+}
+
+
+
+
+/*Statistics*/
+
+.stat-heading{
+    font-size: 32px;
+    text-transform: capitalize;
+    color:var(--dark-blue);
+    margin-bottom: 20px;
+}
+
+.stat-text{
+    font-size: 20px;
+    color:var(--dark-grey);
+    font-weight: 500;
+}
+
+
+/*Triangle*/
+.arrow-right-right{
+	/* width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 70px solid var(--primary);
+	border-bottom: 25px solid transparent;
+    display: inline-block;
+    z-index:2;
+    position:relative;
+    left:10px; */
+}
+
+.arrow-right-left{
+	/* width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 70px solid var(--secondary);
+	border-bottom: 25px solid transparent;
+    display: inline-block;
+    z-index:2;
+    position:relative;
+    left:20px; */
+}
+
+.square{
+	/* width: 0;
+	height: 0;
+	border-top: 25px solid var(--primary);
+	border-left: 70px solid var(--primary);
+	border-bottom: 25px solid var(--primary);
+    display: inline-block;
+    position:relative;
+    left:15px; */
+
+    background-color: var(--primary);
+    display: inline-block;
+    padding:10px 20px;
+    border-radius: 5px;
+    color:var(--secondary);
+
+}
+
+
+/*Score*/
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+caption{
+    font-size: 32px;
+    font-weight: 700;
+    color:var(--dark-blue);
+    margin-bottom: 20px;
+}
+
+th{
+    color:var(--secondary);
+    text-align: left;
+}
+
+td{
+    color:var(--dark-grey);
+}
+
+th,td{
+    
+    border: 1px solid var(--grey);
+    font-weight: 600;
+}
+
+tr > th {
+    background-color: var(--primary);
+}
+
+tr:nth-child(2n) {
+    background-color: var(--light-blue);
+}
+
+/*Pricing*/
+
+.pricing-heading{
+    text-align: center;
+    font-size: 32px;
+    text-transform: capitalize;
+    color:var(--dark-blue);
+   margin-bottom: 20px;
+}
+.box-heading{
+    text-align: center;
+    font-size: 32px;
+    text-transform: capitalize;
+    color:var(--dark-blue);
+   margin-bottom: 20px;
+}
+.box{
+    border:4px solid var(--light-grey);
+    padding:40px;
+    border-radius:10px;
+}
+
+.box-text{
+    font-size: 20px;
+    color:var(--dark-grey);
+    font-weight: 500;
+    text-align: center;
+}
+
+.price-hr{
+    border:0.7px solid var(--grey);
+    margin-bottom: 20px;
+}
+
+.checklist{
+    margin-bottom:24px;
+}
+
+.checklist span{
+    font-size: 20px;
+    font-weight: 500;
+}
+.tick{
+    color:var(--dark-blue);
+}
+
+.cross{
+    color:var(--dark-grey);
+}
+.pricing-btn-one{
+    display:block;
+    border:2px solid var(--grey);
+    border-radius: 4px;
+    padding:10px;
+    text-decoration: none;
+    color:var(--dark-blue);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.price-box{
+    text-align: center;
+    padding:30px 20px;
+}
+.pricing-btn-two{
+    display:block;
+    border:2px solid var(--primary);
+    border-radius: 4px;
+    padding:10px;
+    text-decoration: none;
+    color:var(--secondary);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    background-color: var(--primary);
+}
+.price{
+    font-size: 48px;
+    font-weight: 500;
+    color:var(--primary);
+    text-align: center;
+}
+.price::after{
+    content:"/ Month";
+    font-size: 20px;
+    font-weight: 500;
+    color:var(--dark-grey);
+    margin-left: 10px;
+}
+
+.price::before{
+    content:"$";
+    font-size: 20px;
+    font-weight: 500;
+    color:var(--primary);
+    margin-right: 10px;
+}
+
+
+/*Trial*/
+
+.trial{
+    background-color: var(--primary);
+    border-radius:30px;
+    text-align: center;
+}
+
+.trial h2{
+    font-size: 36px;
+    color:var(--secondary);
+    margin-bottom: 20px;
+}
+
+.btn-trial{
+    display: inline-block;
+        border-radius: 4px;
+        padding:10px 50px;
+        text-decoration: none;
+        color:var(--dark-blue);
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        background-color: var(--secondary);
+}
+
+
+
+
+
+/*For smaller Screen*/
+@media screen and (max-width:992px){
+    .header{
+        height: 50px;
+    }
+    .nav{
+        display: none;
+    }
+
+    .nav li{
+        margin-bottom: 20px;
+    }
+    #toggle:checked ~ .nav {
+        display: inline-block;
+    }
+    label{
+        display: inline-block;
+        font-size: 24px;
+        color:var(--secondary);
+        position: fixed;
+        top:10px;
+        right:20px;
+        z-index: 99;
+    }
+
+    .brand{
+        position: fixed;
+        top:10px;
+        left:20px;
+        z-index: 99;
+    }
+    .flex-col{
+        flex-direction: column;
+    }
+    .nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.7);
+        padding-top: 120px;
+    }
+    .flex{
+        flex-wrap: wrap;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
